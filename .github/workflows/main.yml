@@ -13,5 +13,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          serve: vue-cli-service serve
+          build: npm run serve
           browser: chrome
