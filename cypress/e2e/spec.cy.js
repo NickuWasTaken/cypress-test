@@ -1,7 +1,7 @@
 //1. Lav en test, som kontrollerer, at brugeren kan tilføje en ny opgave til listen.
 describe('Add new project', () => {
   it('passes', () => {
-    cy.visit('http://localhost:8080/')
+    cy.visit('0.0.0.0')
     cy.get('#input').click().type('Cypress Test')
     cy.get('#butAdd').click()
     cy.get('.to-do-item .item')
