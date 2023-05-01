@@ -14,5 +14,5 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           build: npm run serve
-          start: npm start & npx wait-on http://127.0.0.1:8080
+          start: npm start & npx wait-on http://localhost:8080
           browser: chrome
