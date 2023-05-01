@@ -22,7 +22,7 @@ describe('Delete new project', () => {
 //3. Lav en test, som kontrollerer, at brugeren kan redigere en eksisterende opgave.
 describe('Edit new project', () => {
   it('passes', () => {
-    cy.visit('http://localhost:8080/')
+    cy.visit('index.html')
     cy.get('#input').click().type('Cypress Test')
     cy.get('#butAdd').click()
     cy.get('.fa-edit').click()
