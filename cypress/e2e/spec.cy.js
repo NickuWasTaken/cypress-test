@@ -1,7 +1,7 @@
 //1. Lav en test, som kontrollerer, at brugeren kan tilføje en ny opgave til listen.
 describe('Add new project', () => {
   it('passes', () => {
-    cy.visit('/')
+    cy.visit('http://localhost:8080/')
     cy.get('#input').click().type('Cypress Test')
     cy.get('#butAdd').click()
     cy.get('.to-do-item .item')
@@ -22,7 +22,7 @@ describe('Delete new project', () => {
 //3. Lav en test, som kontrollerer, at brugeren kan redigere en eksisterende opgave.
 describe('Edit new project', () => {
   it('passes', () => {
-    cy.visit('index.html')
+    cy.visit('http://localhost:8080/')
     cy.get('#input').click().type('Cypress Test')
     cy.get('#butAdd').click()
     cy.get('.fa-edit').click()
