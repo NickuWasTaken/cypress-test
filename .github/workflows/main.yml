@@ -13,6 +13,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          serve: vue-cli-service serve --port 8080 --open
-          wait-on: "http://127.0.0.1:8080"
+          build: npm run build
+          start: npm run start
           browser: chrome
