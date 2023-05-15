@@ -6,11 +6,11 @@ describe('Testing units', () => {
     const wrapper = shallowMount(ToDoInput, {
       data() {
         return {
-          title: "cakee",
+          title: "cake",
         }
       }
     })
-    expect(wrapper.find('#input').element.value).toEqual('cakee')
+    expect(wrapper.find('#input').element.value).toEqual('cake')
 
   })
 })
