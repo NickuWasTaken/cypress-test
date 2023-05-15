@@ -1,0 +1,12 @@
+name: Unit Tests
+on: push
+jobs:
+  jest-unit-tests:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+          build: npm run build
+          start: npm run start
+          browser: chrome
